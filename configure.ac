@@ -29,7 +29,8 @@ AM_INIT_AUTOMAKE
 AM_PROG_CC_C_O
 
 PKG_CHECK_MODULES(glib, [glib-2.0])
-PKG_CHECK_MODULES(libcoroipcc, [libcoroipcc])
+PKG_CHECK_MODULES(uuid, [uuid])
+PKG_CHECK_MODULES(libqb, [libqb])
 
 dnl pacemaker > 1.1.8
 PKG_CHECK_MODULES(pacemaker, [pacemaker, pacemaker-cib], HAVE_pacemaker=1, HAVE_pacemaker=0)
