@@ -229,7 +229,7 @@ static void
 ais_membership_destroy(gpointer user_data)
 {
 	cl_log(LOG_ERR, "AIS connection terminated - corosync down?");
-	ais_fd_sync = -1;
+	// ais_fd_sync = -1;
 	/* TODO: Is recovery even worth it here? After all, this means
 	 * that corosync died ... */
 	exit(1);
